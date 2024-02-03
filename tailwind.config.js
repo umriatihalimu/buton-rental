@@ -6,7 +6,28 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "10px ",
+      },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1300px",
+    },
+
     extend: {
+      colors: {
+        primary: "#101828",
+        secondary: "#667085",
+        accent: {
+          DEFAULT: "#075798",
+          hover: "#4598DC",
+        },
+        body: "#dedede",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
